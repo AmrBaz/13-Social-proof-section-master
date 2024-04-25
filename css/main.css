@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+body {
+    /* height: 100vh; */
+    font-family: "League Spartan", sans-serif;
+    /* background: url(../imgs/bg-pattern-bottom-desktop.svg) bottom -740px right -168px no-repeat, url(../imgs/bg-pattern-top-desktop.svg) top -5px left 30px no-repeat; */
+    background: url(../imgs/bg-pattern-top-desktop.svg) bottom 350px right 400px no-repeat, url(../imgs/bg-pattern-bottom-desktop.svg) top 200px left 80px no-repeat;
+    background-color: var(--White);
+    font-size: 15px;
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --main-transition: 0.4s;
+}
+h1, h3 {
+    color: var(--Very-Dark-Magenta);
+}
+main .container {
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+main .container .head {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+main .container .head .heading h1 {
+    width: 400px;
+}
+main .container .head .heading h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+main .container .head .heading p {
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 1.6;
+}
+main .container .head .review {
+    margin: 20px 0 0 50px;
+}
+main .container .head .review > div {
+    margin-bottom: 20px;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 15px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .container .head .review .one {
+    margin-left: -50px;
+    margin-right: 65px;
+}
+main .container .head .review .two {
+    margin-left: -20px;
+}
+main .container .head .review .three {
+    margin-left: 15px;
+    margin-right: -45px;
+}
+main .container .profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+main .container .profiles .data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--Light-Grayish-Magenta);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+main .container .profiles .data .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+main .container .profiles .data .info img {
+    width: 50px;
+    border-radius: 50%;
+}
+main .container .profiles .data .info .names p {
+    margin-top: 5px;
+    color: var(--Soft-Pink);
+}
+main .container .profiles .one {
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+main .container .profiles .two {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+main .container .profiles .three {
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+@media (min-width: 815px) and (max-width: 1050px){
+    main .container {
+        width: 800px;
+        padding: 20px;
+        gap: 30px;
+    }
+    main .container .head {
+        padding: 20px;
+        gap: 20px;
+    }
+    main .container .head .review {
+        margin: 20px 0 0 30px;
+    }
+    main .container .head .review > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (min-width: 600px) and (max-width: 815px) {
+    body {
+        background: url(../imgs/bg-pattern-top-mobile.svg) bottom 680px right 100px no-repeat, url(../imgs/bg-pattern-bottom-mobile.svg) top 300px left 330px no-repeat;
+    }
+    main .container {
+        max-width: 100%;
+    }
+    main .container .head {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        background: url(../imgs/bg-pattern-top-mobile.svg) bottom 1080px right 10px no-repeat, url(../imgs/bg-pattern-bottom-mobile.svg) top 190px left 30px no-repeat;
+    }
+    main .container {
+        width: 350px;
+        padding: 20px;
+        margin-bottom: 35px;
+        gap: 20px;
+    }
+    main .container .head {
+        padding: 40px 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    main .container .head .heading h1 {
+        width: 100%;
+    }
+    main .container .head .review {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    main .container .head .review > div {
+        flex-direction: column;
+        padding: 15px 30px;
+    }
+    main .container .head .review .images {
+        margin-bottom: 5px;
+    }
+    main .container .head .review .one {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .container .head .review .two {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .container .head .review .three {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .container .profiles {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    main .container .profiles .data {
+        border-radius: 5px;
+    }
+}
